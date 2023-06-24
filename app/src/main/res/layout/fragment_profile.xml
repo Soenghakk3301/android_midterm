@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/my_profile"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:elevation="0dp"
+                    android:outlineSpotShadowColor="@android:color/transparent"
+                    app:cardCornerRadius="45dp"
+                    tools:targetApi="p">
+
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:importantForAccessibility="no" />
+
+                </androidx.cardview.widget.CardView>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="16dp">
+
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:text="Full Name" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:textSize="16sp"
+                        tools:text="Email" />
+
+                </FrameLayout>
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@android:string/no"
+                    android:src="@drawable/ic_edit"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/edTxtEmail"
+                    android:paddingHorizontal="4dp"
+                    android:text="@string/email"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edTxtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:autofillHints="emailAddress"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="textEmailAddress"
+                    android:textStyle="bold"
+                    tools:text="email@acb.com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/edTxtPhoneNumber"
+                    android:paddingHorizontal="4dp"
+                    android:text="@string/phone_number"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edTxtPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:autofillHints="emailAddress"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="phone"
+                    android:textStyle="bold"
+                    tools:text="000 000 000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/edTxtGender"
+                    android:paddingHorizontal="4dp"
+                    android:text="@string/gender"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edTxtGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:autofillHints="emailAddress"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    tools:text="Male" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/edTxtBirthday"
+                    android:paddingHorizontal="4dp"
+                    android:text="@string/birthday"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edTxtBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:autofillHints="emailAddress"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:textStyle="bold"
+                    tools:text="DD-MM-YYYY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/edTxtAddress"
+                    android:paddingHorizontal="4dp"
+                    android:text="@string/address"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edTxtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="emailAddress"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:maxLines="8"
+                    android:minLines="2"
+                    tools:text="#102 , Phnom Penh"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ITE Online Shop</string>
+
+    <!--  Product Fragment  -->
+    <string name="products">Products</string>
+    <string name="search_products">Search products</string>
+
+    <!--  Profile Fragment  -->
+    <string name="my_profile">My Profile</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="address">Address</string>
+</resources>
